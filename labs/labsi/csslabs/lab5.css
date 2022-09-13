@@ -1,0 +1,112 @@
+body{
+    background-color: #0088a0;
+}
+.back{
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: 0.5s;
+}
+.back:hover{
+    transition: 0.5s;
+    transform: rotate(360deg);
+}
+.main1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    min-height: 250px;
+    min-width: 350px;
+    box-shadow: 0px 25px 25px 0px #0ebfdf;
+    border-radius: 20px;
+}
+
+#divkey{
+    display: none;
+}
+td{
+    color: #10ddff;
+    font-size: 25px;
+    font-family: 'Anonymous Pro', monospace;
+}
+input[type="button"]{
+    height: 20px;
+    color: white;
+    background-color: #10ddff;
+    border-radius: 5px;
+    border-width: 0px;
+    font-size: 15px;
+    font-family: 'Anonymous Pro', monospace;
+    transition: 0.2s;
+}
+input[type="button"]:hover{
+    background-color: #0ebfdf;
+    transition: 0.2s;
+}
+.line{
+    background-color: #10ddff; 
+    width: 2px;
+    min-height: 400px;
+}
+.line1{
+    background-color: #10ddff; 
+    width: 2px;
+    min-height: 200px;
+}
+.divtd{
+    padding: 30px;
+}
+select{
+    height: 20px;
+    border-radius: 5px;
+    border-width: 0px;
+    font-size: 15px;
+    color:white;
+    font-family: 'Anonymous Pro', monospace;
+    background-color: #0ca7c2;
+    transition: 0.2s ease-in-out;
+    
+}
+select:hover{
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    background-color: #10ddff;
+}
+input[type="text"]{
+    font-size: 15px;
+    background-color: #0ebfdf;
+    border-radius: 5px;
+    border-width: 0px;
+    height: 20px;
+    color: white;
+    font-family: 'Anonymous Pro', monospace;
+    transition: 0.2s;
+}
+input[type="text"]:hover{
+    background-color: #0ca7c2;
+    transition: 0.2s;
+}
+
+h2{
+    font-size: 30px;
+    color: #0ebfdf;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+label, p, table caption{
+    font-size: 20px;
+    color: #0ebfdf;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+a{
+    font-family: 'Anonymous Pro', monospace;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шифрование методом замены</title>
+    <link rel="stylesheet" href="./csslabs/lab3.css">
+</head>
+
+<body>
+    <div class="main1">
+        <div align="center">
+            <table align="center">
+                <tr align="left">
+                    <td>
+                        <h2>Метод Цезаря</h2>
+                        <p><input type="text" id="textC"></p>
+                        <p>Ключ:</p>
+                        <p><input type="text" id="keyC"></p>
+                        <input type="button" id="claimC" value="Зашифровать">
+                        <input type="button" id="resetC" value="Расшифровать"><br>
+                        <h2>Результат:</h2>
+                        <input readonly type="text" id="resultC"><br><br>
+                        <input type="button" id="deleteC" value="Очистить">
+                    </td>
+                    <td>
+                        <div class="line"></div>
+                    </td>
+                    <td>
+                        <h2>Метод Трисемуса</h2>
+                        <p><input type="text" id="textT">
+                            <select id="alphtricemus">
+                                <option value="Русский">Русский</option>
+                                <option value="Английский">Английский</option>
+                            </select>
+                        </p>
+                        <p><input type="text" id="a"> - A</p>
+                        <p><input type="text" id="b"> - B</p>
+                        <p><input type="text" id="c"> - C</p>
+                        <input type="button" id="claimT" value="Зашифровать">
+                        <input type="button" id="resetT" value="Расшифровать"><br>
+                        <h2>Результат:</h2>
+                        <input readonly type="text" id="resultT"><br><br>
+                        <input type="button" id="deleteT" value="Очистить">
+                    </td>
+                    <td>
+                        <div class="line"></div>
+                    </td>
+                    <td>
+                        <h2>Метод Плейфера</h2>
+                        <p>
+                            <select id="alphplayfair">
+                                <option value="Русский">Русский</option>
+                                <option value="Английский">Английский</option>
+                            </select>
+                        </p>
+                        <p><input type="text" id="textP"></p>
+                        <p>Ключ:</p>
+                        <p><input type="text" id="keyP"></p>
+                        <input type="button" id="claimP" value="Зашифровать">
+                        <input type="button" id="resetP" value="Расшифровать"><br>
+                        <h2>Результат:</h2>
+                        <input readonly type="text" id="resultP"><br><br>
+                        <input type="button" id="deleteP" value="Очистить">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="back" align="center"><b><a href="../dist/index.html">Back</a></b></div>
+    <script src="./jslabs/lab3.js"></script>
+</body>
+
+</html>

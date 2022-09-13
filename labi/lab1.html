@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="labs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main1">
+        <ul>
+            <li><input type="text" id="dlina" value=""><label for="dlina"> Длина пароля </label></li>  
+            <li><input type="checkbox" id="engletter" name="engletter"><label for="engletter">Латинские буквы</label></li>
+            <li><input type="checkbox" id="ruletter" name="ruletter"><label for="ruletter">Русские буквы</label></li>
+            <li><input type="checkbox" id="downletter" name="downletter"><label for="downletter">Прописные буквы</label></li>
+            <li><input type="checkbox" id="upletter" name="upletter"><label for="upletter">Строчные буквы</label></li>
+            <li><input type="checkbox" id="numbers" name="numbers"><label for="numbers">Цифры</label></li>
+            <li><input type="checkbox" id="symbols" name="symbols"><label for="symbols">Символы</label></li>
+        </ul>
+        <div align = "center">
+            <button id = "create">Создать</button>
+        </div> 
+       <div align="center">
+            <h1>Готовый пароль</h1>
+            <input type="text" id="result" value="">
+        </div>
+    </div>
+    <script src="jslabs/lab1.js"></script>
+</body>
+</html>

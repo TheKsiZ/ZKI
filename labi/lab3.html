@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шифрование методом замены</title>
+</head>
+<body>
+    <p>Выбор системы</p>
+    <select id="method">
+        <option value="Цезаря">Цезаря</option>
+        <option value="Трисемуса">Трисемуса</option>
+        <option value="Плейфера">Плейфера</option>
+    </select><br>
+    
+    <br>
+
+    <input type="text" id="text">
+    <input type="button" id="claim" value="Claim">
+    <input type="button" id="reset" value="Decode">
+    <br>
+    <p>Результат</p>
+    <input type="text" id="result">
+    <input type="button" id="delete" value="Clear">
+    <!-- Цезарь -->
+    <div id="divcesar">
+        <p>Ключ</p>
+        <input type="text" id="key">
+    </div>
+
+    <!-- Трицемус -->
+    <div id="divtricemus">
+        <br>
+        <select id="alphtricemus">
+            <option value="Русский">Русский</option>
+            <option value="Английский">Английский</option>
+        </select>
+        <p>A</p>
+        <input type="text" id="a"><br>
+        <p>B</p>
+        <input type="text" id="b"><br>
+        <p>C</p>
+        <input type="text" id="c">
+    </div>
+      
+    <!-- Плейфер -->
+    <div id="divplayfair">
+        <br>
+        <select id="alphplayfair">
+            <option value="Русский">Русский</option>
+            <option value="Английский">Английский</option>
+        </select>
+        <input type="text" id="keyplayfair">
+    </div>
+
+    <script src="lab3.js"></script>
+</body>
+</html>

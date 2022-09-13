@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="csslabs/lab2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+    <title>Шифрование методами перестановки</title>
+</head>
+<body>
+    <div class="main1">
+        <div align="center">
+            <h2>Шифр простой<br>перестановки</h2>
+            <select id="variant">
+                <option value="4x6">4x6</option>
+                <option value="2x12">2x12</option>
+                <option value="3x8">3x8</option>
+            </select>
+            
+            <input type="button" value="Очистить" id="clear">
+            <p>Введите текст: </p>
+            <input type="text" value="" id="word"><br><br>
+            <input type="button" value="Зашифровать" id="wordclaim">
+            <input type="button" value="Расшифровать" id="decode">
+            <p>Результат:</p>
+            <input type="text" readonly value="" id="resultword">
+        </div>
+        <div align="center">
+            <h2>Магический квадрат</h2>
+            <select autofocus align="center" class="dropdown" id="ds">
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+            <select autofocus align="center" class="dropdown" id="dd">
+                <option value="3x3 Magic Square">3x3</option>
+                <option value="5x5 Magic Square">5x5</option>
+                <option value="6x6 Magic Square">6x6</option>
+                <option value="7x7 Magic Square">7x7</option>
+            </select>
+            <input type="button" id="cleanmagic" value="Очистить">
+            <p>Введите текст: </p>
+            <input type="text" id="magictxt"><br><br>
+            
+            <input type="button" id="claimmagic" value="Зашифровать">
+            <input type="button" id="deletemagic" value="Расшифровать">
+            
+            <p>Результат:</p>
+            <input type="text" readonly value="" id="output">
+        </div>
+    </div>
+    <div class="back" align="center"><b><a href="../dist/index.html">Back</a></b></div>
+    <script src="jslabs/lab2.js"></script>
+</body>
+
+</html>

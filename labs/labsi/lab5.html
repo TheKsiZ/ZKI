@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="csslabs/lab5.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+    <title>Исследование симметричных крипто алгоритмов</title>
+</head>
+<body>
+    <div class="main1">
+        <table>
+            <tr>
+                <td class="divtd">
+                    <h2>Двойная перестановка</h2>
+                    <label for="colsKey">по столбцам:</label><input type="text" id="colsKey"><br><br>
+                    <label for="rowsKey">по строкам :</label><input type="text" id="rowsKey"><br><br>
+                    <p>Введите текст:</p>
+                    <input type="text" id="inputMessage"><br><br>
+                    <input type="button" id="encryptBtn" onclick="process('encrypt')" value="Зашифровать">
+                    <input type="button" id="decryptBtn" onclick="process('decrypt')" value="Расшифровать">
+                    <input type="button" id="delete" value="Очистить">
+                    </div>
+                    <br>
+                </td>
+                <td>
+                    <div align="center" id="outputLine">
+
+                    </div>
+                    <div align="center" id="output">
+
+                    </div>            
+
+                </td>
+                <td>
+                    <div class="line"></div>
+                </td>
+                <td class="divtd">
+                    <h2>Метод Полибия</h2>
+                    <select autofocus align="center" class="dropdown" id="method">
+                        <option value="1">Метод 1</option>
+                        <option value="2">Метод 2</option>
+                        <option value="3">Метод 3</option>
+                    </select>
+                    <select autofocus align="center" class="dropdown" id="system">
+                        <option value="1">Русский</option>
+                        <option value="2">Английский</option>
+                    </select><br><br>
+                    <input type="text" id="text"><br><br>
+                    <input type="button" id="encrypt1" value="Зашифровать">
+                    <input type="button" id="decrypt1" value="Расшифровать"><br>
+                    <div id="divkey">
+                        <p>Ключ</p>
+                        <input type="text" id="key"><br>
+                    </div>
+                    <p>Результат</p>
+                    <input type="text" readonly id="output1"><br>
+                    <input type="button" id="clear" value="Очистить"><br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="back" align="center"><b><a href="../dist/index.html">Back</a></b></div>
+    <script src="jslabs/lab5.js"></script>
+</body>
+</html>

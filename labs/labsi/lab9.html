@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="csslabs/lab9.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+    <title>Защита программ от несанкционированной эксплуатации и копирования</title>
+</head>
+<body>
+    <div class="main1">
+        <div align="center">
+            <table align="center">
+                <tr align="center">
+                    <td>
+                        <h2>Время перебора<br> пароля</h2>
+                        <p>N: <input type="text" id="n1"></p>
+                        <p>K: <input type="text" id="k1"></p>
+                        <p>S: <input type="text" id="s1"></p>
+                        <p>M: <input type="text" id="m1"></p>
+                        <p>V: <input type="text" id="v1"></p>
+                        <input type="button" id="claim1" value="Вычислить">
+                        <input type="button" id="delete1" value="Очистить"><br><br>
+                        <input readonly type = "text" id = "result1">
+                    </td>
+                    <td>
+                        <div class="line"></div>
+                    </td>
+                    <td>
+                        <h2>Минимальная<br>длина пароля</h2>
+                        <p>N: <input type = "text" id = "n2"></p>
+                        <p>S: <input type = "text" id = "s2"></p>
+                        <p>T: <input type = "text" id = "t2"></p>
+                        <input type="button" id="claim2" value="Вычислить">
+                        <input type="button" id="delete2" value="Очистить"><br><br>
+                        <input readonly type = "text" id = "result2">
+                    </td>
+                    <td>
+                        <div class="line"></div>
+                    </td>
+                    <td>
+                        <h2>Количество<br>символов<br>алфавита</h2>
+                        <p>K: <input type = "text" id = "k3"></p>
+                        <p>S: <input type = "text" id = "s3"></p>
+                        <p>T: <input type = "text" id = "t3"></p>
+                        <input type="button" id="claim3" value="Вычислить">
+                        <input type="button" id="delete3" value="Очистить"><br><br>
+                        <input readonly type = "text" id = "result3">   
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="back" align="center"><b><a href="../dist/index.html">Back</a></b></div>
+    <script src = "./jslabs/lab9.js"></script>
+</body>
+</html>

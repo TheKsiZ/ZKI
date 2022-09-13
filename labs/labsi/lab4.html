@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реализация генератора псевдослучайной последовательности</title>
+    <link rel="stylesheet" href="./csslabs/lab4.css">
+</head>
+
+<body>
+    <div class="main1">
+        <div align="center">
+            <table align="center">
+                <tr align="left">
+                    <td>
+                        <h2>Генерация<br>случайных чисел</h2>
+                        <input type="button" id="claim" value="Сгенерировать">
+                        <input type="button" id="clear1" value="Очистить"><br>
+                        <p>Диапазон целых чисел от 3 до 12:</p>
+                        <input type = "text" id = "result1" readonly style="width: 250px;"><br>
+                        <p>Из множества {–3, 0, 6, 9, 12, 15}:</p>
+                        <input type = "text" id = "result2" readonly style="width: 250px;"><br>
+                        <p>От 3 до 12, вещественные:</p>
+                        <input type = "text" id = "result3" readonly style="width: 470px;"><br>
+                        <p>От –2,3 до 10,7 с шагом 0,1:</p>
+                        <input type = "text" id = "result4" readonly style="width: 470px;"><br>
+                        <p>Из множества {–30; 10; 63; 59; 120; 175}:</p>
+                        <input type = "text" id = "result5" readonly style="width: 470px;"><br>
+                        <p>Из множества {1; 0,1; 0,01; …; 10–15}:</p>
+                        <input type = "text" id = "result6" readonly style="width: 550px;"><br>
+                    </td>
+                    <td>
+                        <div class="line"></div>
+                    </td>
+                    <td>
+                        <h2>Игра Быки-Коровы</h2>
+                        <img src="./img/cow.jpg" alt="cows" style="width:300px;height:200px;">
+                        <p><input type = "text" id = "A">
+                        <input type="button" id="test" value="Тест"></p>
+                        <p>Результат:</p>
+                        <p><input type="text" id="result"></p>
+                        <input type="button" id="clear2" value="Очистить">
+                        <input type="button" id="restart" value="Рестарт"><br>
+                        
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="back" align="center"><b><a href="../dist/index.html">Back</a></b></div>
+    <script src="./jslabs/lab4.js"></script>
+</body>
+
+</html>

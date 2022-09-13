@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Исследование асимметричных крипто алгоритмов</title>
+    <link rel="stylesheet" href="./csslabs/lab10.css">
+</head>
+
+<body>
+    <div class="main1">
+        <div align="center">
+            <table align="center">
+                <tr align="left">
+                    <td>
+                        <h2>Алгоритм RSA</h2>
+                        <p><input type="text" id="p" value=""> - P</p>
+                        <p><input type="text" id="q" value=""> - Q</p>
+                        <input type="button" value="Вычислить n, m, d, e" onclick="n()">
+                        <p><input type="text" id="n" readonly> - N</p>
+                        <p><input type="text" id="m" readonly> - M</p>
+                        <p><input type="text" id="e" readonly> - E</p>
+                        <p><input type="text" id="d" readonly> - D</p>
+                        <p>Шифровка:</p>
+                        <p><input type="text" id="shif" readonly></p>
+                        <input type="button" value="Выбрать" id = "1s">
+                        <p>Расшивровка:</p>
+                        <input type="text" id="ras" readonly>
+                        <input type="button" value="Выбрать" id = "1d">
+                    </td>
+                    <td>
+                        <div class="line"></div>
+                    </td>
+                    <td>
+                        <h2>Алгоритм хеширования</h2>
+                        <P>Введите сообщение: </P>
+                        <p>
+                            <input type="text" id="text">
+                            <input type="button" value="Зашифровать" onclick="Schet()">
+                        </p>
+                        <p><textarea id="result" maxlength="81" rows="3" cols="40"></textarea></p>
+                        <input type="button" id="perev" value="Перевести в 10-ю СС" onclick="Perevod()">
+                        <p><textarea id="result2" maxlength="81" rows="3" cols="40"></textarea></p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="back" align="center"><b><a href="../dist/index.html">Back</a></b></div>
+    <script src="./jslabs/lab10.js"></script>
+</body>
+
+</html>

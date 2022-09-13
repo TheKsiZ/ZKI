@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Исследование симметричных крипто алгоритмов</title>
+</head>
+<body>
+    <div id="doublePermutation">
+        <h1>Двойная перестановка</h1>
+        <div id="keysBox"> 
+            <h3>Ключи</h3>
+            по столбцам: <input value="" id="colsKey" size="9" maxlength="9" />
+            по строкам: <input value="" id="rowsKey" size="9" maxlength="9" />
+        </div>
+        <div id="inputDataBox">
+            <h3>Исходное сообщение</h3>
+            <textarea id="inputMessage" maxlength="81" rows="3" cols="50"></textarea>
+        </div>
+        <div id="outputLine">
+
+        </div>
+        <div id="output">
+
+        </div>
+        <div id="buttonbox">
+            <button id="encryptBtn" onclick="process('encrypt')">Зашифровать</button>
+            <button id="decryptBtn" onclick="process('decrypt')">Расшифровать</button>
+        </div>
+    </div>
+    <h1>Метод Полибия</h1>
+    <p>Выбор варианта метода</p>
+    <select autofocus align="center" class="dropdown" id="method">
+        <option value="1">Метод 1</option>
+        <option value="2">Метод 2</option>
+        <option value="3">Метод 3</option>
+    </select>
+    <select autofocus align="center" class="dropdown" id="system">
+        <option value="1">Русский</option>
+        <option value="2">Английский</option>
+    </select><br><br>
+    <input type="text" id="text"><br><br>
+    <input type="button" id="encrypt1" value="Зашифровать">
+    <input type="button" id="decrypt1" value="Расшифровать"><br>
+    <p>Ключ</p>
+    <input type="text" id="key"><br>
+    <p>Результат</p>
+    <textarea readonly id="output1"></textarea><br><br>
+    <input type="button" id="clear" value="Очистить"><br>
+    <script src="jslabs/lab5.js"></script>
+</body>
+</html>

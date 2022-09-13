@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шифрование методами перестановки</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: rgba(0, 0, 0, 0.1);
+            font-family: 'Titillium Web', sans-serif;
+            font-size: 15px;
+            width: 100%;
+            height: 100vh;
+            padding: 10px;
+            background: linear-gradient(to bottom, #cfcfcf 0%, #19181a 100%);
+            overflow: hidden;
+        }
+        .container {
+            display: table;
+            max-width: 460px;
+            width: 100%;
+            margin: 10% auto 0;
+            background-color: #838383;
+            border-radius: 10px;
+        }
+        .header {
+            border-radius: 10px;
+            background-color: #838383;
+            width: 100%;
+            height: 420px;
+            max-height: 420px;
+            color: #fff;
+            padding: 10px;
+            font-weight: bold;
+        }
+        h3 {
+            font-family: 'Anonymous Pro', monospace;
+            text-shadow: white 1px 1px 0px, white -1px -1px 0px,
+                white -1px 1px 0px, white 1px -1px 0px;
+            font-size: 20px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Шифр простой перестановки</h3>
+            <select id="variant">
+                <option value="4x6">4x6</option>
+                <option value="2x12">2x12</option>
+                <option value="3x8">3x8</option>
+            </select>
+            <input type="button" value="Очистить" id="clear"><br><br>
+            <input type="text" value="" id="word">
+            <input type="text" value="" id="resultword">
+            <input type="button" value="Зашифровать" id="wordclaim">
+            <br><br>
+            <input type="text" id="deword">
+            <input type="text" value="" id="deresultword">
+            <input type="button" value="Расшифровать" id="decode">
+            <h3>Магический квадрат</h3>
+            <p>Введите текст: </p>
+            <input type="text" id="magictxt">
+            <select autofocus align="center" class="dropdown" id="ds">
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+            <select autofocus align="center" class="dropdown" id="dd">
+                <option value="3x3 Magic Square">3x3</option>
+                <option value="5x5 Magic Square">5x5</option>
+                <option value="6x6 Magic Square">6x6</option>
+                <option value="7x7 Magic Square">7x7</option>
+            </select><br><br>
+            <input type="button" id="claimmagic" value="Зашифровать">
+            <input type="button" id="deletemagic" value="Расшифровать">
+            <input type="button" id="cleanmagic" value="Очистить">
+            <p>Результат:</p>
+            <textarea readonly id="output"></textarea>
+            <textarea readonly id="output1"></textarea>
+        </div>
+    </div>
+    <script src="jslabs/lab2.js"></script>
+</body>
+
+</html>

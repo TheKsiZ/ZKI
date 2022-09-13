@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Исследование асимметричных крипто алгоритмов</title>
+    <link rel="stylesheet" href="./csslabs/lab6.css">
+</head>
+
+<body>
+    <div class="main1">
+        <div align="center">
+            <table align="center">
+                <tr align="left">
+                    <td>
+                        <h2>Алгоритм Эль-Гамаля</h2>
+                        <p><input type = "text" id = "p"> - P</p>
+                        <p><input type = "text" id = "q"> - Q <input type="button" id="encrypt1" value="Вычислить n, m, d, e" onclick="n()">
+                        </p>
+                        <p><input readonly type = "text" id = "n"> - N
+                        <input readonly type = "text" id = "m"> - M</p>
+                        <p><input readonly type = "text" id = "e"> - E
+                        <input readonly type = "text" id = "d"> - D</p>
+                        <p>Сообщение для шифрования:</p>
+                        <p><input type = "text" id = "text"> <input type="button" value="Очистить" id="del" onclick="Delete()"></p>
+                        <p>Шифрование:</p>
+                        <p><input readonly type = "text" id = "shif"> <input type="button" value="Получить" onclick="Shifr()"></p>
+                        <p>Расшифрование:</p>
+                        <p><input readonly type = "text" id = "ras"> <input type="button" value="Получить"onclick="Ras()"></p>
+                    </td>
+                    <td>
+                        <div class="line"></div>
+                    </td>
+                    <td>
+                        <h2>Алгоритм RSA</h2>
+                        <p><input type = "text" id = "text2"> - Сообщение</p>
+                        <p>Введите p:</p>
+                        <p><input type = "text" id = "p2"></p>
+                        <input type="button" value="Вычислить g, k, y" onclick="p2()">
+                        <p><input readonly type = "text" id = "g2"> - G</p>
+                        <p><input readonly type = "text" id = "k2"> - K</p>
+                        <p><input readonly type = "text" id = "y2"> - Y</p>
+                        <p><input readonly type = "text" id = "a2"> - A</p>
+                        <p><input readonly type = "text" id = "b2"> - B</p>
+                        <p><input readonly type="button" value="Зашифровать" onclick="Shif2()">
+                        <input type="button" value="Расшифровать" onclick="Ras2()"></p>
+                        <p><input readonly type = "text" id = "t2"> - Шифртекст</p>
+                        <p><input readonly type = "text" id = "u2"> - Расшифровка</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="back" align="center"><b><a href="../dist/index.html">Back</a></b></div>
+    <script src="./jslabs/lab6.js"></script>
+</body>
+
+</html>

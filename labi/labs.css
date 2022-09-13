@@ -1,0 +1,55 @@
+body{
+    background-color: black;
+}
+/* Laba 1 */
+.main1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(70, 70, 70);
+    min-height: 250px;
+    min-width: 500px;
+    opacity: 80%;
+    box-shadow: 0px 10px 0px 0px rgb(116, 116, 116);
+}
+li {
+    list-style-type: none;
+   }
+ul{
+    padding-left: 175px;
+}
+label{
+    font-size: 20px;
+    color: white;
+    font-family: 'Anonymous Pro', monospace;
+}
+h1{
+    font-size: 20px;
+    color: white;
+    font-family: 'Anonymous Pro', monospace;
+}
+#dlina{
+    width: 30px;
+    height: 15px;
+}
+#result{
+    text-align: center;
+    height: 40px;
+    width: 500px;
+}
+button{
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    border: none;
+    width: 30%;
+    font-family: 'Anonymous Pro', monospace;
+}
+a{
+    font-family: 'Anonymous Pro', monospace;
+    color: white;
+    font-size: 20px;
+    color: greenyellow;
+}

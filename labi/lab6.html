@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Исследование ассиметричных крипроалгоритмов</title>
+</head>
+<body>
+    <script src="lab6.js"></script>
+    <h1>Алгоритм Эль-Гамаля</h1>
+    Введите p:
+    <br><input type="text" id="p" value="">
+    <br><br>Введите q:
+    <br><input type="text" id="q" value="">
+    <br><br><input type="button" value="Вычислить n, m, d, e" onclick="n()">
+    <br><br>n=<input type="text" id="n" readonly>
+    <br><br>m=<input type="text" id="m" readonly>
+    <br><br>Полученное значение e:
+    <br><input type="text" id="e" value="">
+    <br><br>d=<input type="text" id="d" readonly>
+    <br><br>Сообщение для шифрования: <input type="text" id="text" value="">
+    <br><br>Шифровка: <input type="text" id="shif" readonly> <input type="button" value="Выбрать" onclick="Shifr()"><br>
+    <br><br>Расшифровка: <input type="text" id="ras" readonly> <input type="button" value="Выбрать" onclick="Ras()"><br>
+    <br><br><input type="button" value="Очистить" id="del" onclick="Delete()">
+    <h1>Алгоритм RSA</h1>
+    Введите текст для шифрования: 
+    <br><input type="text" id="text2" value="">
+    <br><br>Введите p:
+    <br><input type="text2" id="p2" value="" >
+    <br><br><input type="button" value="Вычислить g, k, y" onclick="p2()" >
+    <br><br>g=<input type="text" id="g2" value="" readonly>
+    <br><br>k=<input type="text" id="k2" value="" readonly>
+    <br><br>y=<input type="text" id="y2" value="" readonly>
+    <br><br>a=<input type="text" id="a2" value="" readonly>
+    <br><br>b=<input type="text" id="b2" value="" readonly>
+    <br><br><input type="button" value="Зашифровать" onclick="Shif2()" >
+    <br><br><input type="button" value="Расшифровать" onclick="Ras2()">
+    <br><br>Шифртекст: <input type="text" id="t2" value="" readonly>
+    <br><br>Расшифровка: <input type="text" id="u2" value="" readonly>
+</body>
+</html>

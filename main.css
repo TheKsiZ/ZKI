@@ -1,0 +1,85 @@
+body{
+    background-color: rgb(32, 32, 32);  
+    text-align: center;
+    overflow: hidden;
+}
+.logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.levi{
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-color: rgb(41, 41, 41); 
+}
+.slidelevi{
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+.pravi{
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    margin-left: 50%;
+    float: right;
+    background-color: rgb(70, 70, 70); 
+}
+.slidepravi{
+    animation-duration: 2s;
+    animation-name: slideout;
+}
+h1{
+    font-family: 'Anonymous Pro', monospace;
+    text-shadow:rgb(110, 0, 253) 2px 2px 0px, rgb(110, 0, 253) -2px -2px 0px,
+    rgb(110, 0, 253) -2px 2px 0px, rgb(110, 0, 253) 2px -2px 0px;
+    font-size: 100px;
+    color:black;
+}
+h2{
+    font-family: 'Anonymous Pro', monospace;
+    text-shadow:white 1px 1px 0px, white -1px -1px 0px,
+                white -1px 1px 0px, white 1px -1px 0px;
+    font-size: 40px;
+    color:black;
+}
+input{
+    font-family: 'Anonymous Pro', monospace;
+    color:black;
+    font-size: 22px;
+    background-color: rgb(110, 0, 253);
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+}
+/* Animations */
+@keyframes slidein {
+    from {
+      margin-top: 100%;
+      width: 50%;
+    }
+  
+    to {
+      margin-top: 0%;
+      width: 50%;
+    }
+}
+@keyframes slideout {
+    from {
+      margin-top: -100%;
+      width: 50%;
+    }
+  
+    to {
+      margin-top: 0%;
+      width: 50%;
+    }
+}
